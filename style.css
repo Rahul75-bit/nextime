@@ -1,0 +1,405 @@
+body {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  
+}
+
+img {
+  height: 150px;
+  width: 200px;
+}
+.container-fluid {
+  margin-top: 10px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.rating-stars {
+  color: rgb(31, 31, 1);
+}
+
+.product-item {
+  max-width: 300px;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.footer-items {
+  color: #ccc;
+}
+.footer-items ul {
+  list-style: square;
+}
+
+.breadcrumb {
+  background-color: #eee;
+}
+.product-small img {
+  max-width: 10rem;
+  padding: 1rem;
+}
+.product-item {
+  border: 0px solid grey;
+}
+.product-item:hover {
+  border: 2px solid grey;
+  box-shadow: 2px 6px 4px grey;
+  transition: all 0.2s ease-in;
+}
+.order {
+  border: 1px solid grey;
+}
+.close i {
+  font-size: 1.5rem;
+}
+.close i:hover {
+  color: rgb(189, 82, 82);
+  font-size: 1.5rem;
+}
+#cw {
+  margin-bottom: 20px;
+  height: 300px;
+  width: 100%;
+}
+
+#bg:hover {
+  transform: translateY(-15px);
+  transition: 0.2s ease-in;
+}
+.fh:hover {
+  color: rgb(92, 88, 88);
+  cursor: pointer;
+}
+
+/* Enhanced Gradient Navbar Styling */
+.custom-navbar {
+  background: linear-gradient(135deg, #1d2671, #c33764);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease-in-out;
+}
+
+/* Nav links styling */
+.custom-navbar .nav-link {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #00e6e6;
+  text-decoration: underline;
+}
+
+/* Cart icon hover effect */
+.custom-navbar .cart-link:hover i {
+  color: #ffcc00;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+/* Search button */
+.custom-navbar .btn-outline-light {
+  border-color: #ffffff;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-navbar .btn-outline-light:hover {
+  background-color: #ffffff;
+  color: #1d2671;
+  font-weight: bold;
+}
+
+/* Gradient & glassmorphism footer like navbar */
+.custom-footer {
+  /* background: linear-gradient(135deg, #1d2671, #c33764); */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer Heading */
+.footer-heading {
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+/* Footer Links */
+.footer-link {
+  display: block;
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  padding: 4px 0;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #00e6e6;
+  text-decoration: underline;
+}
+
+/* Subscribe Button */
+.custom-footer .btn-outline-light {
+  border-color: #fff;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-footer .btn-outline-light:hover {
+  background-color: #ffffff;
+  color: #1d2671;
+  font-weight: bold;
+}
+
+/* Input smooth style */
+.custom-footer input.form-control {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.custom-footer input.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.carousel {
+  max-height: 550px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-image-wrapper {
+  position: relative;
+}
+
+.carousel-image {
+  object-fit: cover;
+  height: 550px;
+  filter: brightness(0.7);
+}
+
+/* Optional caption styling */
+.carousel-caption {
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
+  text-align: left;
+}
+
+.carousel-caption h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+  color: #eee;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Controls color */
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: brightness(0.8) invert(1);
+}
+
+.carousel-caption h2,
+.carousel-caption p {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Global Background: animated gradient + glow particles (subtle) */
+body {
+  background: linear-gradient(
+    135deg,
+    #141e30,
+    #243b55
+  ); /* deep blue gradient */
+  background-attachment: fixed;
+  background-size: 400% 400%;
+  animation: bgShift 20s ease infinite;
+  color: #fff;
+}
+
+/* Soft shifting animation */
+@keyframes bgShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Optional soft floating glow dots */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(#ffffff22 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+/* Cards stand out with subtle glass effect */
+.card.product-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.card.product-item:hover {
+  transform: scale(1.03);
+}
+
+/* Card title & text for dark background readability */
+.card-title,
+.card-text {
+  color: #f1f1f1;
+  
+}
+
+.rating-stars i {
+  color: #ffcc00;
+}
+
+/* Pagination theme */
+.pagination .page-link {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: none;
+  color: #ffffffcc;
+  transition: background 0.3s ease;
+}
+.pagination .page-link:hover,
+.pagination .page-item.active .page-link {
+  background-color: #00e6e6;
+  color: #000;
+}
+
+/* Optional scroll animation */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease-in-out;
+}
+
+[data-animate].active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* Card Background & Shadow */
+.product-item {
+  /* background: rgba(255, 255, 255, 0.05); */
+  background: linear-gradient(180deg, #0f2027, #203a43, #2c5364);
+
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.5s, box-shadow 0.5s;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+/* Card Hover Effect */
+.product-item:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Card Image */
+.product-item .card-img-top {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  transition: transform 0.5s;
+}
+
+.product-item:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+/* Card Body Styling */
+.product-item .card-body {
+ background: linear-gradient(180deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  
+  transition: background 0.3s;
+}
+
+/* Title and Price */
+.product-item .card-title {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.product-item h5 span.rating-stars i {
+  color: gold;
+}
+
+/* Add To Cart Button */
+.product-item .btn-outline-primary {
+  border-radius: 25px;
+  padding: 8px 20px;
+  border-color: #ffd700;
+  color: #ffd700;
+  transition: all 0.3s ease;
+}
+
+.product-item .btn-outline-primary:hover {
+
+  background: linear-gradient(180deg, #0f2027, #203a43, #2c5364);
+
+  opacity: 23;
+  z-index: 12;
+  color: #fff;
+  border-color: transparent;
+}
+
+/* Container Padding and Margin */
+.container-fluid.size {
+  margin-top: 0px;
+  margin-bottom: 3px;
+  padding: 80px 20px 50px;
+  
+}
+
+
+/* reviews  */
+.testimonial{
+   background: linear-gradient(180deg, #0f2027, #203a43, #2c5364);
+}
+.testimonial-card {
+  background: linear-gradient(180deg, #0f2027, #203a43, #2c5364);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+

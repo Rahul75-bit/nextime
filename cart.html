@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Page</title>
+
+    <!-- cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!-- bootstrap css link -->
+    <link rel="stylesheet" href="bootstrap.min.css" />
+
+    <!-- custom css link-->
+    <link rel="stylesheet" href="style.css" />
+
+      <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+   <style>
+    body{
+      padding-top: 70px;
+    }
+   </style>
+   
+  </head>
+  <body>
+    <!-- navbar starts  -->
+     <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold text-white" href="index.html">NexTime</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link "  href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="register.html">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product.html">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link cart-link active" aria-current="page" href="cart.html">
+                Cart <i class="bi bi-cart-fill"></i>
+              </a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!--navbar ends  -->
+
+    <!-- card page starts  -->
+    <div class="container mb-5">
+      <div class="d-flex flex-row align-items-start">
+        <div class="col-8 d-flex flex-column m-2">
+          <div class="cart-item p-3">
+            <div class="d-flex flex-row">
+              <img class="col-2 img-fluid" src="/images/cart1.jpg" alt="" />
+              <div class="col-6 p-2">
+                <h5>Product Name</h5>
+                <h6>Brand</h6>
+                <p>$100</p>
+              </div>
+
+              <div class="col-2 p-2">
+                Quantity
+                <select name="" id="">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+
+              <div
+                class="col-2 d-flex align-items-start justify-content-end close"
+              >
+                <i class="bi bi-x-circle-fill"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-item p-3">
+            <div class="d-flex flex-row">
+              <img class="col-2 img-fluid" src="/images/cart2.webp" alt="" />
+              <div class="col-6 p-2">
+                <h5>Product Name</h5>
+                <h6>Brand</h6>
+                <p>$100</p>
+              </div>
+
+              <div class="col-2 p-2">
+                Quantity
+                <select name="" id="">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+
+              <div
+                class="col-2 d-flex align-items-start justify-content-end close"
+              >
+                <i class="bi bi-x-circle-fill"></i>
+              </div>
+            </div>
+          </div>
+          <div class="cart-item p-3">
+            <div class="d-flex flex-row">
+              <img class="col-2 img-fluid" src="/images/cart3.webp" alt="" />
+              <div class="col-6 p-2">
+                <h5>Product Name</h5>
+                <h6>Brand</h6>
+                <p>$100</p>
+              </div>
+
+              <div class="col-2 p-2">
+                Quantity
+                <select name="" id="">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+
+              <div
+                class="col-2 d-flex align-items-start justify-content-end close"
+              >
+                <i class="bi bi-x-circle-fill"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 order p-3 m-2">
+          <h4>Order Total</h4>
+          <div class="d-flex flex-row py-2">
+            <input type="text" class="form-control" placeholder="Promo Code" />
+            <button class="btn btn-primary">Apply</button>
+          </div>
+
+          <div class="d-flex flex-row justify-content-between p-2">
+            <span class="billing-item">Items</span>
+            <span class="billing-cost">$100</span>
+          </div>
+
+          <div class="d-flex flex-row justify-content-between p-2">
+            <span class="billing-item">Shipping</span>
+            <span class="billing-cost">$10</span>
+          </div>
+
+          <div class="d-flex flex-row justify-content-between p-2">
+            <span class="billing-item">Discount</span>
+            <span class="billing-cost">-$10</span>
+          </div>
+
+          <div class="d-flex flex-row justify-content-between p-2">
+            <span class="billing-item fs-5">Total</span>
+            <span class="billing-cost fs-5">$100</span>
+          </div>
+
+          <div class="d-flex mt-3 d-grid gap-2">
+            <a href="checkout.html">
+              <button class="btn btn-outline-primary flex-grow-1">
+                Pay Now
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- card page ends  -->
+
+    <!-- footer page starts  -->
+    <footer class="custom-footer text-light mt-5">
+      <div class="container py-4">
+        <div class="row footer-items">
+          <div class="col-md-4 mb-3">
+            <h5 class="footer-heading">Categories</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="footer-link">Watches</a></li>
+              <li><a href="#" class="footer-link">Premium Collection</a></li>
+              <li><a href="#" class="footer-link">Black Addition</a></li>
+              <li><a href="#" class="footer-link">Platinum Body</a></li>
+              <li><a href="#" class="footer-link">For Kids</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <h5 class="footer-heading">Useful Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="footer-link">Terms</a></li>
+              <li><a href="#" class="footer-link">Privacy</a></li>
+              <li><a href="#" class="footer-link">About Us</a></li>
+              <li><a href="#" class="footer-link">History</a></li>
+              <li><a href="#" class="footer-link">Mission</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
+            <h5 class="footer-heading">Get Updates</h5>
+            <form class="d-flex gap-2">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Email address"
+              />
+              <button class="btn btn-outline-light" type="submit">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- footer page ends  -->
+
+    <script src="bootstrap.bundle.min.js"></script>
+  </body>
+</html>
